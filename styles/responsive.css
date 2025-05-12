@@ -1,6 +1,3 @@
-/* === Responsive Anpassungen === */
-
-/* === Medium Devices === */
 @media (max-width: 750px) {
     :root {
         --dynamic-scale: 1.5;
@@ -11,7 +8,6 @@
     }
 }
 
-/* === Kleine Tablets === */
 @media (max-width: 475px) {
     :root {
         --dynamic-scale: 1;
@@ -22,7 +18,6 @@
     }
 }
 
-/* === Smartphones === */
 @media (max-width: 380px) {
     .header-content {
         padding: 0 16px;

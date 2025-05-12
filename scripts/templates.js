@@ -1,6 +1,3 @@
-'use strict';
-
-// Kartenansicht 
 function getPokemonCardTemplate(pokemon, pokemonIndex, mode) {
     return `
     <div class="card ${pokemon.types[0].type.name}">
@@ -20,7 +17,6 @@ function getPokemonCardTemplate(pokemon, pokemonIndex, mode) {
     `;
 }
 
-// Overlay 
 async function getPokemonOverlayTemplate(pokemon, pokemonIndex, mode) {
     return `
         <button onclick="togglePokemonOverlay('hide')" class="close-btn">
@@ -78,7 +74,6 @@ async function getPokemonOverlayTemplate(pokemon, pokemonIndex, mode) {
     `;
 }
 
-// Typenanzeige auf Karte
 function getTypeLabelTemplate(pokemon) {
     return pokemon.types.map(type => `
         <span class="type-label type-${type.type.name}">
@@ -87,14 +82,12 @@ function getTypeLabelTemplate(pokemon) {
     `).join('');
 }
 
-// Typenanzeige im Overlay
 function getOverlayTypeLabelTemplate(pokemon) {
     return pokemon.types.map(type => `
         <span class="type-label type-${type.type.name}">${type.type.name.toUpperCase()}</span>
     `).join('');
 }
 
-//  Abilities & Stats mit Balkenanzeige
 function getOverlayAbilitiesTemplate(pokemon) {
     let abilities = pokemon.abilities.map(ability => capitalizeEachWord(ability.ability.name));
     return `<td>Abilities</td><td>${abilities.join(", ")}</td>`;

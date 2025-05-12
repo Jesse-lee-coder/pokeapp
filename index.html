@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="assets/img/pokeball-tab.png">
     <title>PokeInfo</title>
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/types.css">
     <link rel="stylesheet" href="styles/card.css">
@@ -15,10 +14,12 @@
     <link rel="stylesheet" href="styles/responsive.css">
 
     <script src="scripts/loading_spinner.js"></script>
+
 </head>
 
 <body onload="init()">
     <header>
+
         <div class="content-max-width header-content">
             <div class="logo-container">
                 <div class="logo">
@@ -29,6 +30,7 @@
                     <img class="pokeball" src="assets/img/pokeball.png" alt="">
                 </div>
             </div>
+
             <div class="search-wrapper">
                 <input
                     type="search"
@@ -36,40 +38,44 @@
                     placeholder="Search Pokémon"
                     minlength="3"
                     autocomplete="off"
-                    oninput="searchPokemon()"   
-                />
+                    oninput="searchPokemon()"/>
                 <span id="tooltip" class="tooltip">Enter at least 3 letters</span>
             </div>
         </div>
+
     </header>
 
     <main id="main">
+
         <section id="content" class="content content-max-width"></section>
         <section id="control" class="control"></section>
     
         <div id="card_overlay" class="card-overlay d-none"></div>
     
-        <!-- Ladespinner -->
         <div id="loading_overlay" class="load-spinner-overlay d-none">
+
             <div class="load-spinner-content">
                 <h1>Loading...</h1>
-                <img src="assets/img/pokeball-spinner.png" alt="Loading Pokeball Spinner">
+                    <img src="assets/img/pokeball-spinner.png" alt="Loading Pokeball Spinner">
+
                 <div id="loading_progress">
                     Loaded <span id="loaded_count"></span> from <span id="total_count"></span> Pokemons
                 </div>
+
                 <div id="progress_bar" class="progress-bar">
                     <div id="loading_bar_fill" class="progress-fill"></div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer>
         <a href="#content"><img class="footer-img" src="assets/img/projektarbeit.png" alt=""></a>
-        <p>
-            &copy; 2025 Jesse Lee Wauer |
-            <span class="image-info" onclick="toggleImageTooltip()">Images</span>
-        </p>
+            <p>
+                &copy; 2025 Jesse Lee Wauer |
+                <span class="image-info" onclick="toggleImageTooltip()">Images</span>
+            </p>
         <div id="image-tooltip" class="tooltip-box d-none">
             <ul>
                 <li><a href="https://www.flaticon.com/free-icons/left-arrow">Left arrow by Icon home</a></li>
@@ -82,7 +88,6 @@
         </div>
     </footer>
 
-    <!-- Skripte ------------------------------------------------->
     <script src="scripts/script.js"></script>          
     <script src="scripts/templates.js"></script>
 

@@ -1,4 +1,3 @@
-/* === Typen Labels (Text) === */
 .type-label {
     display: inline-block;
     font-family: 'Press Start 2P', monospace;
@@ -14,7 +13,6 @@
     text-transform: uppercase;
 }
 
-/* === Typ-Labels: Spezielle Farben je Typ === */
 .type-grass    { background-color: limegreen;      border-color: green; }
 .type-poison   { background-color: mediumvioletred; border-color: purple; }
 .type-fire     { background-color: orangered;      border-color: saddlebrown; }
@@ -33,7 +31,6 @@
 .type-ghost    { background-color: mediumpurple;   border-color: indigo; }
 .type-ice      { background-color: lightcyan;      border-color: cadetblue; }
 
-/* === Karten Hintergrundfarben je Typ === */
 .grass    { background-color: limegreen; }
 .poison   { background-color: mediumvioletred; }
 .fire     { background-color: orangered; }
@@ -52,7 +49,6 @@
 .ghost    { background-color: mediumpurple; }
 .ice      { background-color: lightcyan; }
 
-/* === Weißer Hintergrund für Bildkreis auf Karten === */
 .grass .card-img-circle,
 .poison .card-img-circle,
 .fire .card-img-circle,
@@ -73,7 +69,6 @@
     background-color: white;
 }
 
-/* === Hover Effekte für Pokémon-Bildkreis === */
 .grass .card-img-circle:hover,
 .poison .card-img-circle:hover,
 .fire .card-img-circle:hover,
