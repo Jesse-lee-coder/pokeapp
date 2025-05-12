@@ -1,0 +1,75 @@
+/* === Kartenlayout === */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: auto;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    padding: 16px 8px;
+}
+
+.card-header .headline {
+    font-size: 24px;
+}
+
+/* === Karteninhalt === */
+.card-pokemon-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* === Bildkreis (Pokémon) === */
+.card-img-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+    filter: saturate(200%);
+}
+
+.card-img-circle:hover:not(.no-hover) .card-pokemon-img {
+    transform: scale(1.05);
+}
+
+/* Pokémon Bild */
+.card-pokemon-img {
+    height: 190px;
+    transition: var(--transition);
+    background-color: transparent; /* Transparent als Fallback */
+}
+
+/* === Typicons in der Karte === */
+.pokemon-type-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    gap: 24px;
+    padding: 16px;
+}
+
+

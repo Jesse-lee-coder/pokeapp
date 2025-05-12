@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../assets/fonts/Audiowide/Audiowide-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../assets/fonts/Press_Start_2P/PressStart2P-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,132 @@
+/* === Responsive Anpassungen === */
+
+/* === Medium Devices === */
+@media (max-width: 750px) {
+    :root {
+        --dynamic-scale: 1.5;
+    }
+
+     .search-wrapper {
+        display: none;
+    }
+}
+
+/* === Kleine Tablets === */
+@media (max-width: 475px) {
+    :root {
+        --dynamic-scale: 1;
+    }
+
+    .card-overlay-content {
+        transform: scale(0.9);
+    }
+}
+
+/* === Smartphones === */
+@media (max-width: 380px) {
+    .header-content {
+        padding: 0 16px;
+    }
+
+    .settings {
+        width: 40px;
+        height: 40px;
+    }
+
+    .settings img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-header {
+        padding: 8px;
+    }
+
+    .card-header .headline {
+        font-size: 18px;
+    }
+
+    .card-overlay-content .overlay-type-img {
+        height: 20px;
+    }
+
+    .card-overlay-content .evo-card-img {
+        height: 50px;
+    }
+
+    .card-img-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-img-circle .card-pokemon-img {
+        height: 130px;
+    }
+
+    .stats-buttons button {
+        font-size: 16px;
+    }
+
+    .stats-cnt {
+        padding: 8px;
+        height: 200px;
+    }
+
+    .info-cnt {
+        font-size: 12px;
+    }
+
+    .info-table td {
+    padding-bottom: 8px;
+    font-size: 12px;
+    }
+    .stat-bar-fill {
+    font-size: 11px;
+    padding-left: 4px;
+    }
+
+    .evolution .evo-arrow {
+        height: 40px;
+        width: 25px;
+    }
+
+    .overlay-footer {
+        padding: 8px 16px;
+    }
+
+    .card-footer {
+        padding: 8px;
+    }
+
+    .load-spinner-content {
+        font-size: 18px;
+    }
+
+    .add-more {
+        font-size: 16px;
+    }
+
+    .evolution {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+    .evo-card {
+    gap: 6px;
+    font-size: 10px;
+    max-width: 80px;
+    }
+
+    .evo-card-img {
+    height: 40px;
+    }
+
+    .evo-arrow {
+    height: 25px;
+    width: 12px;
+    }
+}

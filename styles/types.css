@@ -1,0 +1,95 @@
+/* === Typen Labels (Text) === */
+.type-label {
+    display: inline-block;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    padding: 4px 6px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+    image-rendering: pixelated;
+    text-transform: uppercase;
+}
+
+/* === Typ-Labels: Spezielle Farben je Typ === */
+.type-grass    { background-color: limegreen;      border-color: green; }
+.type-poison   { background-color: mediumvioletred; border-color: purple; }
+.type-fire     { background-color: orangered;      border-color: saddlebrown; }
+.type-water    { background-color: dodgerblue;     border-color: navy; }
+.type-bug      { background-color: olive;         border-color: darkolivegreen; }
+.type-normal   { background-color: lightgray;      border-color: gray; }
+.type-flying   { background-color: lightsteelblue; border-color: slategray; }
+.type-electric { background-color: gold;           border-color: goldenrod; }
+.type-ground   { background-color: burlywood;      border-color: peru; }
+.type-dragon   { background-color: mediumslateblue; border-color: darkslateblue; }
+.type-fairy    { background-color: pink;           border-color: palevioletred; }
+.type-fighting { background-color: firebrick;      border-color: darkred; }
+.type-psychic  { background-color: hotpink;        border-color: crimson; }
+.type-rock     { background-color: darkkhaki;      border-color: sienna; }
+.type-steel    { background-color: lightgray;      border-color: slategray; }
+.type-ghost    { background-color: mediumpurple;   border-color: indigo; }
+.type-ice      { background-color: lightcyan;      border-color: cadetblue; }
+
+/* === Karten Hintergrundfarben je Typ === */
+.grass    { background-color: limegreen; }
+.poison   { background-color: mediumvioletred; }
+.fire     { background-color: orangered; }
+.water    { background-color: dodgerblue; }
+.bug      { background-color: olive; }
+.normal   { background-color: lightgray; }
+.flying   { background-color: lightsteelblue; }
+.electric { background-color: gold; }
+.ground   { background-color: burlywood; }
+.dragon   { background-color: mediumslateblue; }
+.fairy    { background-color: pink; }
+.fighting { background-color: firebrick; }
+.psychic  { background-color: hotpink; }
+.rock     { background-color: darkkhaki; }
+.steel    { background-color: lightgray; }
+.ghost    { background-color: mediumpurple; }
+.ice      { background-color: lightcyan; }
+
+/* === Weißer Hintergrund für Bildkreis auf Karten === */
+.grass .card-img-circle,
+.poison .card-img-circle,
+.fire .card-img-circle,
+.water .card-img-circle,
+.bug .card-img-circle,
+.normal .card-img-circle,
+.flying .card-img-circle,
+.electric .card-img-circle,
+.ground .card-img-circle,
+.dragon .card-img-circle,
+.fairy .card-img-circle,
+.fighting .card-img-circle,
+.psychic .card-img-circle,
+.rock .card-img-circle,
+.steel .card-img-circle,
+.ghost .card-img-circle,
+.ice .card-img-circle {
+    background-color: white;
+}
+
+/* === Hover Effekte für Pokémon-Bildkreis === */
+.grass .card-img-circle:hover,
+.poison .card-img-circle:hover,
+.fire .card-img-circle:hover,
+.water .card-img-circle:hover,
+.bug .card-img-circle:hover,
+.normal .card-img-circle:hover,
+.flying .card-img-circle:hover,
+.electric .card-img-circle:hover,
+.ground .card-img-circle:hover,
+.dragon .card-img-circle:hover,
+.fairy .card-img-circle:hover,
+.fighting .card-img-circle:hover,
+.psychic .card-img-circle:hover,
+.rock .card-img-circle:hover,
+.steel .card-img-circle:hover,
+.ghost .card-img-circle:hover,
+.ice .card-img-circle:hover {
+    box-shadow: 0 0 30px 5px;
+}
