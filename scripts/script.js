@@ -12,7 +12,7 @@ let isSearchActive = false;
 let searchResults = [];
 
 async function init() {
-    showLoadingSpinner();
+    showLoadingSpinner(151);
     await loadAllPokemons();
     await loadAllTypes();
     await loadVisiblePokemons(); 
